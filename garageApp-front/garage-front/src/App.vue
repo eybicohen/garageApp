@@ -18,7 +18,9 @@
       </template>
 
       <v-col class="offset-4">
-        <v-app-bar-title style="font-size: 63px; font-family: Cursive;" class="ml-16"
+        <v-app-bar-title
+          style="font-size: 63px; font-family: Cursive"
+          class="ml-16"
           >GarageApp</v-app-bar-title
         >
       </v-col>
@@ -42,19 +44,21 @@
         <v-tabs align-left>
           <v-tab>Tab 1</v-tab>
           <v-tab>Tab 2</v-tab>
-          <v-tab>Tab 3</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
+    <MainPage style="margin-top:35vh" />
   </v-app>
 </template>
 
 <script>
+import MainPage from "./components/MainPage.vue";
+
 export default {
   name: "App",
-
   data: () => ({
     //
   }),
+  components: { MainPage },
 };
 </script>
