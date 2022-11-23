@@ -6,7 +6,7 @@
       dark
       shrink-on-scroll
       prominent
-      src="https://images.pexels.com/photos/4488637/pexels-photo-4488637.jpeg?auto=compress&cs=tinysrgb&w=600"
+      src="./assets/pexels-cottonbro-studio-4488637.jpg"
       fade-img-on-scroll
       scroll-target="#scrolling-techniques-3"
     >
@@ -35,19 +35,12 @@
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
+        <v-icon>mdi-logout-variant </v-icon>
       </v-btn>
 
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <template v-slot:extension>
-        <v-tabs align-left>
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
-        </v-tabs>
-      </template>
     </v-app-bar>
-    <MainPage style="margin-top:35vh" />
+    <router-view></router-view>
   </v-app>
 </template>
 
